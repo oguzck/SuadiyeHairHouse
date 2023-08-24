@@ -25,6 +25,10 @@ namespace SuadiyeHairHouse.Controllers
         {
             return View();
         }
+        public IActionResult FrequentlyAskedQuestions()
+        {
+            return View();
+        }
 
 
     }
