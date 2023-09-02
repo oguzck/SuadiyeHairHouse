@@ -42,13 +42,9 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "BeforeAfter",
-    pattern: "öncesi-sonrasi",
+    pattern: "oncesi-sonrasi",
     defaults: new { controller = "Home", action = "BeforeAndAfter" });
 
-
-// ... add more custom routes as needed ...
-
-// Keep the default route after all your custom routes
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

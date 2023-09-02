@@ -6,17 +6,17 @@ namespace SuadiyeHairHouse.Models
 {
     public class SendMailDto
     {
-        [Required(ErrorMessage = "İsim Alanı Gereklidir.")]
+        [Required(ErrorMessage = "Bu alan zorunludur.")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Email Alanı Boş Geçilemez.")]
+        [Required(ErrorMessage = "Bu alan zorunludur.")]
         [EmailAddress(ErrorMessage = "Lütfen Geçerli Bir Email Girin.")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Telefon Numarası Gereklidir.")]
+        [Required(ErrorMessage = "Bu alan zorunludur.")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "Mesaj Alanı Boş Geçilemez.")]
+        [Required(ErrorMessage = "Bu alan zorunludur.")]
         public string Message { get; set; }
     }
 }
